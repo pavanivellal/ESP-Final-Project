@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TM Builder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+body  {
+    background-image: url("http://www.smh.com.au/advertisers/brand-discover/officeworks/IT/img/Officeworks-image-4.jpg");
+    background-color: #cccccc;
+}
+.jumbotron { 
+    background-color: #000000 ; /* Orange */
+    color: #ffffff;
+    padding: 10px 15px;
+    
+}
+
+ .navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+</style>
+
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!navbar>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+ 			 <div class="container">
+   			 <div class="navbar-header">
+     		 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       			<span class="icon-bar"></span>
+       		 	<span class="icon-bar"></span>
+        	 	<span class="icon-bar"></span>                        
+     		 </button>
+      <a class="navbar-brand" href="login.php">Login</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="frontend.html">ABOUT</a></li>
+    
+        <li><a href="fontend.html">CONTACT</a></li>
+      <li><a href="cust_book.html">PROJECT</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div></nav>
+
+		<div class="jumbotron text-center">
+  			<p>TM Builders</p> 
+  			<p><h2>TM Builders</h2></p> 
+		 </div>
+
+     <!video>
+<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+  <div class="container">    
+                                
+       
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="login.php" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form" action="action.php" method="post">
+                                
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                                          
+                                                            
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                                    </div>
+                                </div>
+
+                               <div class="form-group">
+                                    <label for="middlename" class="col-md-3 control-label">Middle Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="middlename" placeholder="Middle Name">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+
+				<div class="form-group">
+                                    <label for="dob" class="col-md-3 control-label">Date of Birth</label>
+                                    <div class="col-md-9">
+                                        <input type="date" class="form-control" name="dob" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                                    </div>
+                                </div>
+
+                               
+        						<div class="form-group">
+            						<label for="pass1" class="col-md-3 control-label">Password:</label>
+           							 <div class="col-md-9">
+           							 <input type="password" class="form-control" name="pass1" id="pass1" placeholder="Password" required>
+       								 </div></div>
+
+       						 <div class="form-group">
+         				   <label for="pass2" class="col-md-3 control-label">Confirm Password:</label>
+          				  <div class="col-md-9">
+           				 <input type="password" class="form-control" name="pass2" id="pass2" placeholder="Re-Enter Password"		 onkeyup="checkPass1(); return false;" required>
+           				 <span id="confirmMessage" class="confirmMessage"></span>
+       						 </div></div>
+    
+				
+
+
+
+<script>
+function checkPass1()
+{
+    //Store the password field objects into variables ...
+    var pass1 = document.getElementById('pass1');
+    var pass2 = document.getElementById('pass2');
+    //Store the Confimation Message Object ...
+    var message = document.getElementById('confirmMessage');
+    //Set the colors we will be using ...
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+    //Compare the values in the password field 
+    //and the confirmation field
+    if(pass1.value == pass2.value){
+        //The passwords match. 
+        //Set the color to the good color and inform
+        //the user that they have entered the correct password 
+        pass2.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = "Passwords Match!"
+    }else{
+        //The passwords do not match.
+        //Set the color to the bad color and
+        //notify the user.
+        pass2.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = "Passwords Do Not Match!"
+    }
+}  
+
+//validation for phone number
+
+function validateFeedback(){
+   // alert("hello");
+    var phone = document.getElementById("phone");
+    var pmssg = document.getElementById("pmssg");
+    //var RE = /^[\d\.\-]+$/;
+    var RE = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+    if(!RE.test(phone.value))
+    {
+        phone.style.backgroundColor = badColor;
+       // alert("Invalid phone number");
+       pmssg.style.color = badColor;
+         pmssg.innerHTML = "Phone number could not be character"
+        return false;
+    }
+       else{
+   phone.style.backgroundColor = goodColor;
+   pmssg.style.color = goodColor;
+   pmssg.innerHTML = "Valid"
+    return true;
+        }
+}
+
+//validate zip
+function validatezip(){
+   // alert("hello");
+    var zip = document.getElementById("zip");
+    var err = document.getElementById("err");
+
+    var RE = /(^\d{5}$)|(^\d{5}-\d{4}$)/
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+    if(!RE.test(zip.value))
+    {
+        zip.style.backgroundColor = badColor;
+       // alert("Invalid phone number");
+       err.style.color = badColor;
+         err.innerHTML = "Invalid"
+        return false;
+	document.getElementById("register").disabled = true;
+    }
+       else{
+   zip.style.backgroundColor = goodColor;
+   err.style.color = goodColor;
+   err.innerHTML = "Valid"
+    return true;
+    document.getElementById("register").disabled = false;
+        }
+}
+
+</script>
+
+                               
+                                <div class="form-group">
+                                    <label for="phone" class="col-md-3 control-label">Phone Number</label>
+                                    <div class="col-md-9">
+                                        <input type="tel" class="form-control" name="phone" id="phone" maxlength="10" onkeyup="validateFeedback()" placeholder="phone">
+                                         <span id="pmssg" class="pmssg"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="addr1" class="col-md-3 control-label">Address Line 1</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="addr1" placeholder="Address Line 1" required>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="addr2" class="col-md-3 control-label">Address Line 2</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="addr2" placeholder="Address Line 2">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="city" class="col-md-3 control-label">City</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="city" placeholder="City" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="state" class="col-md-3 control-label">State/Province</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="state" placeholder="State/Province" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="country" class="col-md-3 control-label">Country</label>
+                                    <div class="col-md-9">
+                                    <select class="form-control" name="country" required>
+                                      <option value="US">United States</option>
+                                      <option value="AT">Austria</option>
+                                      <option value="BG">Bulgaria</option>
+                                      <option value="BR">Brazil</option>
+                                      <option value="CA">Canada</option>
+                                      <option value="CZ">Czech Republic</option>
+                                      <option value="DK">Denmark</option>
+                                      <option value="FR">French</option>
+                                      <option value="DE">Germany</option>
+                                      <option value="IN">India</option>
+                                      <option value="IT">Italy</option>
+                                      <option value="IE">Ireland</option>
+                                      <option value="MA">Morocco</option>
+                                      <option value="NL">Netherlands</option>
+                                      <option value="PL">Poland</option>
+                                      <option value="PT">Portugal</option>
+                                      <option value="RO">Romania</option>
+                                      <option value="RU">Russia</option>
+                                      <option value="SG">Singapore</option>
+                                      <option value="SK">Slovakia</option>
+                                      <option value="ES">Spain</option>
+                                      <option value="SE">Sweden</option>
+                                      <option value="CH">Switzerland</option>
+                                      <option value="GB">United Kingdom</option>
+                                    </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-xs-3 control-label">Postal code</label>
+                                    <div class="col-xs-5">
+                                        <input type="text" class="form-control" name="zip" id="zip" onkeyup="validatezip()"  required/>
+                                        <span id="err" class="err"></span>
+
+                                    </div>
+                                </div>                                
+
+                                <button type="submit" class="btn pull-right" name="register" value="register">Submit</button>
+
+                                </div>
+                            </form>
+
+
+                         </div>
+                    </div>
+
+
+  </HEAD>
+  </body>
+  </HTML>
+
+
+
+
+

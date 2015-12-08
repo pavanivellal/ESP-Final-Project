@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Customer Dash</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<style>
+.table{width: 900px;height: 200px;border-collapse:collapse;}
+.table-wrap{max-height: 200px;width:100%;overflow-y:auto;overflow-x:hidden;}
+.table-dalam{height:300px;width:700px;border-collapse:collapse;}
+.td-nya{border-left:1px solid white;border-right:1px solid grey;border-bottom:1px solid grey;}
+</style>
+
+
+<!-- Populate the unit table on tower change-->
+<script>
+function showUnits(str) {
+  var xhttp;    
+  if (str == "") {
+    document.getElementById("units").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("units").innerHTML = xhttp.responseText;
+    }
+  };
+
+  xhttp.open("GET", "cust_book.php?tower="+str, true);
+  xhttp.send();
+}
+ 
+</script>
+<!-- End of Populating the unit table -->
+
+<br><br>
+<div class="container">
+<!--Choose Tower Dropdown -->
+<div class="form-group">
+<label for="tw_id">Choose Tower (select one):</label>
+<select class="form-control" name="tw_id" id="tw_id" onchange="showUnits(this.value)">
+<script>
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("tw_id").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "cust_book.php?fill=tower", true);
+  xhttp.send();
+</script>
+</select>
+</div>
+<!-- End of Choose Tower Dropdown -->
+
+<div class = "col-sm-4">
+<div id = "units">Units Appear Here</div>
+</div>
+</div>
+
+
+</body>
+</html>
